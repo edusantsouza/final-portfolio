@@ -1,0 +1,189 @@
+.home__container {
+  row-gap: 9rem;
+}
+
+.home__content {
+  grid-template-columns: 116px repeat(2, 1fr);
+  padding-top: 8.8rem;
+  column-gap: 3.2rem;
+  align-items: center;
+}
+
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1.6rem ;
+}
+
+.home__social-icon {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.home__social-icon:hover {
+  color: var(--text-hover);
+}
+
+
+.home__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-0-4);
+}
+
+.home__subtitle{
+  position: relative;
+  font-size: var(--h3-font-size);
+  padding-left: 8.64rem;
+  font-weight: var(--font-normal);
+  padding-bottom: var(--mb-1-6);
+}
+
+.home__subtitle::before{
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: var(--text-color);
+  left: 0;
+  top: 12px;
+}
+
+.home__description {
+  max-width: 40rem;
+  margin-bottom: var(--mb-3-2);
+}
+
+
+.home__img{
+  background: url(../../assets/profile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  order: 1;
+  justify-self: center;
+  width: 30rem;
+  height: 30rem;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  
+}
+
+.home__scroll {
+  margin-left: 14.8rem;
+}
+
+
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+
+  0%{
+    transform: translateY(0);
+  }
+
+  30%{
+    transform: translateY(6rem);
+  }
+  
+}
+
+
+.home__scroll-name{
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-4);
+  margin-left: 2px;
+}
+
+.home__scroll-arrow {
+  font-size:2rem;
+  color: var(--text-color);
+}
+
+/*============= Breakpoints ===================*/
+
+/*============= Para telas maiores ===================*/
+@media screen and (max-width: 992px){
+ .home__content{
+  grid-template-columns: 100px repeat(2, 1fr);
+  column-gap: 2rem;
+ }
+
+ .home__subtitle {
+  padding-left: 6rem;
+  margin-bottom: var(--mb-1-6);
+ }
+
+ .home__subtitle::before{
+  width: 42px;
+  top: 1.1rem;
+ }
+
+ .home__description{
+  max-width: initial;
+  margin-bottom:var(--mb-3-2) ;
+ }
+
+ .home__img{
+  width: 25rem;
+  height: 25rem;
+  box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+ }
+
+ .home__scroll {
+  margin-left:12rem ;
+ }
+
+
+}
+
+/*============= Para tela média ===================*/
+@media screen and (max-width: 768px){
+.home__content {
+  grid-template-columns: .5fr 3fr;
+  padding-top: 3.5rem;
+}
+
+.home__img{
+  order: initial;
+  justify-self: initial;
+}
+
+.home__data {
+  grid-column: 1/3;
+}
+
+.home__img{
+  width: 20rem;
+  height: 20rem;
+  box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+}
+
+.home__scroll{
+  display: none;
+}
+}
+
+/*============= Para telas menores ===================*/
+@media screen and (max-width: 350px){
+  .home__img{
+    width: 18rem;
+    height: 18rem;
+  }
+}

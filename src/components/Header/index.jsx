@@ -3,7 +3,7 @@ import "./index.css";
 
 const Header = () =>{
 /*============= Toggle Menu ===================*/
-  const[Toggle, showMenu] = useState(false); 
+  const[showMenu, setShowMenu] = useState(false); 
   
   return(
     <header className="header">
@@ -11,7 +11,7 @@ const Header = () =>{
         <a href="index.html" className="nav__logo">EduSant</a>
 
         <div className={
-          Toggle ? "nav__menu show-menu" : "nav__menu"
+          showMenu ? "nav__menu show-menu" : "nav__menu"
           }>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -53,12 +53,12 @@ const Header = () =>{
           </ul>
 
           <i className="uil uil-times nav__close" onClick={
-            ()=>showMenu(!Toggle)
+            ()=>setShowMenu(!showMenu)
             }></i>
         </div>
 
         <div className="nav__toggle"  onClick={
-          ()=>showMenu(!Toggle)
+          ()=>setShowMenu(!showMenu)
           }>
           <i className="uil uil-apps"></i>
         </div>

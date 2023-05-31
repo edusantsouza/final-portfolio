@@ -52,13 +52,13 @@ img {
 :root{
 
   /*============= Colors ===============*/
-  --body-color: #F4F6FF;
+  --body-color: #F8F9FF;
   --highlight-color: #6F4ECF;
   --text-color: #3D3D3E;
   --text-muted: #777777;
   --text-hover: #232945;
   --black: #1e1e1e;
-  --container-color: #F8F9FF;
+  --container-color:#F4F6FF ;
   --text-white: #fff;
 
   /*============= Fontes ===================*/
@@ -192,8 +192,16 @@ img {
 
 /*============= Para tela média ===================*/
 @media screen and (max-width: 768px){
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
   .section{
     padding: 3.2rem 0 6.4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3-2);
   }
 }
 

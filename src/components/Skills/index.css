@@ -1,0 +1,76 @@
+.skillbox__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:8rem;
+}
+
+.skillbox {
+  max-width: 400px;
+  width: 50%;
+  background-color: var(--container-color);
+  padding: 2.35rem 2rem;
+  box-shadow: 0px 2px 4px 0px #00000013;
+  border: 0.5px solid var(--text-muted);
+  border-radius: 10px;
+}
+
+.skill__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+.skill__title{
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: var(--h3-font-size);
+}
+
+.skill__title > i{
+  font-size: 2rem;
+  margin-right: var(--mb-0-4);
+}
+
+.skill__level{
+  font-size: var(--tiny-font-size);
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-left: .5rem;
+}
+
+.skill__att {
+  margin-top: var(--mb-0-8);
+  margin-left: var(--mb-2-8);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  list-style: initial;
+}
+
+.skill__att__item{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+}
+
+
+/*============= Breakpoints ===================*/
+
+/*============= Para tela média ===================*/
+@media screen and (max-width: 576px){
+  .skillbox__container {
+    padding-inline: 2rem ;
+  }
+  .skillbox{
+    width: 100%;
+  }
+}
+
+/*============= Para telas menores ===================*/
+@media screen and (max-width: 350px){
+  .skill__title{
+    font-size: var(--normal-font-size);
+  }
+}

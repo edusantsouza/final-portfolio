@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 450px;
-  height: 450px;
+  justify-content: center;
+  max-width: 450px;
   background-color: var(--body-color);
   position: absolute;
   top: calc(50% - 200px);
@@ -50,4 +49,65 @@
 .modal__item {
   font-size: var(--small-font-size);
   color: var(--text-muted);
+}
+
+
+/*============= Breakpoints ===================*/
+
+
+/*============= Para tela média ===================*/
+@media screen and (max-width: 576px){
+  .modal__container {
+    max-width: 350px;
+    top: calc(50% - 75px);
+    left: calc(50% - 175px);
+    padding: 6rem 2rem;
+    justify-content: center;
+  }
+
+  
+.modal__box{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__title {
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem; 
+}
+
+.modal__subtitle{
+  font-size: var(--tiny-font-size);
+  margin-bottom: var(--mb-2-4); 
+  max-width: 80%;
+  margin: 0 auto 2rem;
+}
+
+.modal__list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.modal__icon {
+  color: var(--text-muted);
+  margin-right: .5rem;
+}
+
+.modal__item {
+  font-size: var(--tiny-font-size);
+}
+}
+
+/*============= Para telas menores ===================*/
+@media screen and (max-width: 350px){
+  .modal__container {
+    max-width: 300px;
+    top: calc(50% - 70px);
+    left: calc(50% - 150px);
+    padding: 4rem 2rem;
+    justify-content: center;
+  }
 }

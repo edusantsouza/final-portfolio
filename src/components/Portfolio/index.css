@@ -1,0 +1,95 @@
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 4rem;
+}
+
+.portfolio__item{
+  padding: 2rem 1rem;
+  background-color: var(--container-color);
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  box-shadow: 0px 8px 16px 0px #00000026;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.portfolio__details{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.portfolio__see-repository,.portfolio__see-more{
+  font-size: var(--smaller-font-size);
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  color: var(--text-color);
+  transition: .3s;
+}
+
+.portifolio__tecnologies{
+  font-size: var(--tiny-font-size);
+  color: var(--text-color);
+}
+
+.portfolio__see-repository:hover, .portfolio__see-more:hover{
+  color: var(--text-hover)
+}
+
+.portfolio__stack {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.portfolio__stack-icons{
+  font-size: var(--h3-font-size);
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+}
+
+.portfolio__item-img{
+  width: 250px;
+  height: 140px;
+  margin-bottom: 1rem;
+}
+
+.bxl-javascript:before{
+  font-size: var(--h2-font-size);
+}
+
+/*============= Breakpoints ===================*/
+
+/*============= Para telas maiores ===================*/
+@media screen and (max-width: 992px){
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 4rem;
+  }
+  
+
+}
+
+/*============= Para tela média ===================*/
+@media screen and (max-width: 768px){
+}
+
+@media screen and (max-width: 576px){
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    row-gap: 4rem;
+  }
+}
+
+/*============= Para telas menores ===================*/
+@media screen and (max-width: 350px){
+  
+}

@@ -9,7 +9,7 @@ const Data = () => {
       <p className='home__description'>Sou um desenvolvedor frontend júnior e graduando em Engenharia da Computação. Solucionar problemas através de códigos é o que eu amo fazer.</p>
 
       <a href="#contact" className="button button--flex">
-        Say Hello 
+        Fale comigo
         <svg 
         className='button__icon'
         width="29" 

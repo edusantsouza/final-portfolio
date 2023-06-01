@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -7,6 +6,7 @@ import Skills from "./components/Skills";
 import Services from "./components/Services";
 import Qualification from "./components/Qualification";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contatc";
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
         <Services />
         <Qualification />
         <Portfolio />
+        <Contact />
       </main>
     </>
   );

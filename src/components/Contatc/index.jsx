@@ -15,7 +15,7 @@ const Contact = () => {
           <span className='contact__way-title'>E-mail</span>
         </div>
         <span className="contact__way">eduardo.santsouza@gmail.com</span>
-        <a href="" className="contact__link">
+        <a href="" className="contact__link" target='_blank'>
           Entre em contato 
           <i class="uil uil-arrow-right"></i>
         </a>
@@ -26,8 +26,8 @@ const Contact = () => {
           <i class="uil uil-linkedin-alt"></i>
           <span className='contact__way-title'>Linkedin</span>
         </div>
-        <span className="contact__way">eduardo-sant-souza</span>
-        <a href="https://www.linkedin.com/in/eduardo-sant-souza/" className="contact__link">
+        <span className="contact__way">Eduardo Santana</span>
+        <a href="https://www.linkedin.com/in/eduardo-sant-souza/" className="contact__link" target='_blank'>
           Entre em contato 
           <i class="uil uil-arrow-right"></i>
         </a>
@@ -39,7 +39,7 @@ const Contact = () => {
           <span className='contact__way-title'>Whatsapp Link</span>
         </div>
         <span className="contact__way">Envie uma mensagem</span>
-        <a href="" className="contact__link">
+        <a href="" className="contact__link" target='_blank'>
           Entre em contato 
           <i class="uil uil-arrow-right"></i>
         </a>

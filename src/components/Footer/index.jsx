@@ -17,12 +17,12 @@ const Footer = () => {
           </li>
 
           <li className='footer__navigation-item'>
-            <a href="#services">Serviços</a>
+            <a href="#skills">Skills</a>
           </li>
         </ul>
 
         <nav className="footer__social">
-          <a href="#" target='blank'><i class="uil uil-whatsapp"></i></a>
+          <a href="https://wa.me/21980467613" target='blank'><i class="uil uil-whatsapp"></i></a>
           <a href="https://github.com/edusantsouza" target='blank'><i class="uil uil-github-alt"></i></a>
           <a href="https://www.linkedin.com/in/eduardo-sant-souza/" target='blank'><i class="uil uil-linkedin-alt"></i></a>
         </nav>

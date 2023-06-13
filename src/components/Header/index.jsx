@@ -1,18 +1,18 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./index.css";
 
-const Header = () =>{
-/*============= Toggle Menu ===================*/
-  const[showMenu, setShowMenu] = useState(false); 
-  
-  return(
+const Header = () => {
+  /*============= Toggle Menu ===================*/
+  const [showMenu, setShowMenu] = useState(false);
+
+  return (
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">EduSant</a>
 
         <div className={
           showMenu ? "nav__menu show-menu" : "nav__menu"
-          }>
+        }>
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
@@ -32,11 +32,11 @@ const Header = () =>{
               </a>
             </li>
 
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a href="#services" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i> Serviços
               </a>
-            </li>
+            </li> */}
 
             <li className="nav__item">
               <a href="#portfolio" className="nav__link">
@@ -53,13 +53,13 @@ const Header = () =>{
           </ul>
 
           <i className="uil uil-times nav__close" onClick={
-            ()=>setShowMenu(!showMenu)
-            }></i>
+            () => setShowMenu(!showMenu)
+          }></i>
         </div>
 
-        <div className="nav__toggle"  onClick={
-          ()=>setShowMenu(!showMenu)
-          }>
+        <div className="nav__toggle" onClick={
+          () => setShowMenu(!showMenu)
+        }>
           <i className="uil uil-apps"></i>
         </div>
       </nav>

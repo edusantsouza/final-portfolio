@@ -15,12 +15,13 @@ const About = () => {
         <img src={AboutImg} alt="Minha foto de perfil." className='about__img' />
 
         <div className="about__data">
-          <Info/>
+          <Info />
 
-          <p className="about__description">Sou um desenvolvedor frontend júnior e graduando em Engenharia da Computação. Solucionar problemas através de códigos é o que eu amo fazer. Sou um desenvolvedor frontend júnior e graduando em Engenharia da Computação. Solucionar problemas através de códigos é o que eu amo fazer.</p>
-
-          <a download="" href={CV} className="button button--flex">Currículo 
-          <i class="uil uil-file-download-alt"></i>
+          <p className="about__description">
+            Graduando em Engenharia da Computação pela Faculdade Descomplica - 5º período, sou um solucionador de problemas. Muito atento aos detalhes, consistente e curioso. Possuo facilidade para aprender coisas novas, boa capacidade de raciocínio lógico e me dou muito bem com trabalho em equipe.
+          </p>
+          <a download="" href={CV} className="button button--flex">Currículo
+            <i class="uil uil-file-download-alt"></i>
           </a>
         </div>
       </div>

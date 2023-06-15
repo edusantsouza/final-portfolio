@@ -12,7 +12,7 @@ const Portfolio = () => {
       urlRepo: 'https://github.com/edusantsouza/vibbe.co',
       stackIcons: [
         'uil uil-react',
-        "bx bxl-css3",
+        "uil uil-html5",
         "uil uil-html3",
         "bx bxl-javascript",
       ],

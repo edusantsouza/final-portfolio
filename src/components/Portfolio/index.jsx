@@ -47,6 +47,17 @@ const Portfolio = () => {
         "uil uil-html3",
         "bx bxl-javascript",],
     },
+    {
+      name: 'Formulário Multi Step',
+      urlImg: 'multi-step.JPG',
+      urlSite: 'https://multi-step-form-opal-ten.vercel.app/',
+      urlRepo: 'https://github.com/edusantsouza/multiStep-Form',
+      stackIcons: [
+        "uil uil-html5",
+        "uil uil-html3",
+        "bx bxl-javascript",
+      ],
+    },
   ]
   return (
     <section className="portfolio section container" id="portfolio">

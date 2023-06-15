@@ -22,9 +22,9 @@ const Footer = () => {
         </ul>
 
         <nav className="footer__social">
-          <a href="https://wa.me/21980467613" target='blank'><i class="uil uil-whatsapp"></i></a>
-          <a href="https://github.com/edusantsouza" target='blank'><i class="uil uil-github-alt"></i></a>
-          <a href="https://www.linkedin.com/in/eduardo-sant-souza/" target='blank'><i class="uil uil-linkedin-alt"></i></a>
+          <a href="https://wa.me/5521980467613" target='blank'><i className="uil uil-whatsapp"></i></a>
+          <a href="https://github.com/edusantsouza" target='blank'><i className="uil uil-github-alt"></i></a>
+          <a href="https://www.linkedin.com/in/eduardo-sant-souza/" target='blank'><i className="uil uil-linkedin-alt"></i></a>
         </nav>
       </div>
 

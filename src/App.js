@@ -3,11 +3,11 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Services from "./components/Services";
 import Qualification from "./components/Qualification";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contatc";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -17,12 +17,12 @@ const App = () => {
         <Home />
         <About />
         <Skills />
-        {/* <Services /> */}
         <Qualification />
         <Portfolio />
         <Contact />
-        <Footer />
+        <ScrollToTop/>
       </main>
+      <Footer />
     </>
   );
 };

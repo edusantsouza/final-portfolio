@@ -21,7 +21,7 @@ const About = () => {
             Graduando em Engenharia da Computação pela Faculdade Descomplica - 5º período, sou um solucionador de problemas. Muito atento aos detalhes, consistente e curioso. Possuo facilidade para aprender coisas novas, boa capacidade de raciocínio lógico e me dou muito bem com trabalho em equipe.
           </p>
           <a download="" href={CV} className="button button--flex">Currículo
-            <i class="uil uil-file-download-alt"></i>
+            <i className="uil uil-file-download-alt"></i>
           </a>
         </div>
       </div>

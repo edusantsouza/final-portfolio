@@ -4,10 +4,10 @@ const Social = () => {
   return (
     <div className="home__social">
       <a href="https://www.linkedin.com/in/eduardo-sant-souza/" className="home__social-icon" target='blank'>
-        <i class="uil uil-linkedin-alt"></i>
+        <i className="uil uil-linkedin-alt"></i>
       </a>
       <a href="https://github.com/edusantsouza" className="home__social-icon" target='blank'>
-        <i class="uil uil-github-alt"></i>
+        <i className="uil uil-github-alt"></i>
       </a>
     </div>
   )

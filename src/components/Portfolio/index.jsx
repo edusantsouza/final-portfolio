@@ -58,6 +58,15 @@ const Portfolio = () => {
         "bx bxl-javascript",
       ],
     },
+    {
+      name: 'Game List',
+      urlImg: 'list-game.jpg',
+      urlSite: 'https://list-games.vercel.app/',
+      urlRepo: 'https://github.com/edusantsouza/list-games',
+      stackIcons: [
+        'uil uil-react',
+      ],
+    },
   ]
   return (
     <section className="portfolio section container" id="portfolio">

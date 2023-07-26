@@ -60,7 +60,7 @@ const Portfolio = () => {
     },
     {
       name: 'Game List',
-      urlImg: 'list-game.jpg',
+      urlImg: 'list-game.png',
       urlSite: 'https://list-games.vercel.app/',
       urlRepo: 'https://github.com/edusantsouza/list-games',
       stackIcons: [

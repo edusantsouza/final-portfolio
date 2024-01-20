@@ -51,11 +51,16 @@
 
 .footer__social a {
   padding: 1rem;
-  background-color: var(--text-color);
+  background-color: var(--text-hover);
   color: var(--body-color);
   font-size: 3rem;
   border-radius: 10px;
 }
+
+.footer__social a:hover{
+  background-color: var(--button-color);
+}
+
 
 .footer__copy{
   color: var(--text-muted);

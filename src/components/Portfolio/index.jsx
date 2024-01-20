@@ -20,7 +20,7 @@ const Portfolio = () => {
     {
       name: 'Menerfa',
       urlImg: 'menerfa-img.JPG',
-      urlSite: 'https://menerfa-project.vercel.app/',
+      urlSite: 'https://menerfa.com.br',
       urlRepo: 'https://github.com/edusantsouza/menerfa-project',
       stackIcons: [
         "uil uil-html5",

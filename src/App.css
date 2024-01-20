@@ -57,9 +57,19 @@ img {
   --text-color: #3D3D3E;
   --text-muted: #777777;
   --text-hover: #232945;
+  --button-color: #3D3D3E;
   --black: #1e1e1e;
   --container-color:#F4F6FF ;
   --text-white: #fff;
+
+  --body-color: #090810;
+  --text-muted: #CBCBCB;
+  --text-hover: #232945;
+  --text-color: #CBCBCB;
+  --button-color: #6666b4;
+  --container-color:#0C0E16 ;
+  --text-hover: #c0caf5;
+
 
   /*============= Fontes ===================*/
   --body-font: "Inter", sans-serif;
@@ -151,7 +161,7 @@ img {
 
     .button {
     display: inline-block;
-    background-color: var(--text-color);
+    background-color: var(--button-color);
     color: var(--text-white);
     padding: 2rem 3.2rem;
     border-radius: 1.6rem;
@@ -159,7 +169,7 @@ img {
   }
 
   .button:hover {
-    background-color: var(--text-hover);
+    background-color: var(--highlight-color);
   }
 
   .button__icon {

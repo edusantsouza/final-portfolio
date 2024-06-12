@@ -3,7 +3,7 @@
 }
 
 .home__content {
-  grid-template-columns: 116px repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding-top: 8.8rem;
   column-gap: 3.2rem;
   align-items: center;
@@ -82,8 +82,16 @@
   
 }
 
+
+.button--home{
+  padding-inline: 4rem !important;
+  margin-top: 4rem;
+}
+
 .home__scroll {
-  margin-left: 14.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -121,7 +129,7 @@
 /*============= Para telas maiores ===================*/
 @media screen and (max-width: 992px){
  .home__content{
-  grid-template-columns: 100px repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
  }
 
@@ -157,6 +165,10 @@
 .home__content {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
+}
+
+.desktop__image{
+  display: none;
 }
 
 .home__img{

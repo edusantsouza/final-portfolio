@@ -1,16 +1,35 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
+import ScreenshotsSection from '../ScreenshotsSection'
 
 const Data = () => {
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+  
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 769);
+    };
+  
+    useEffect(() => {
+      checkScreenSize();
+  
+      window.addEventListener('resize', checkScreenSize);
+  
+      return () => {
+        window.removeEventListener('resize', checkScreenSize);
+      };
+    }, []);
+
   return (
     <div className="home__data">
       <h1 className="home__title">Eduardo Sant</h1>
 
-      <h3 className="home__subtitle">Desenvolvedor Frontend</h3>
-      <p className='home__description'>Sou um desenvolvedor frontend júnior e graduando em Engenharia da Computação.
-        <br />Gosto de jogos, de gatos e de viajar. ✈</p>
+      <h3 className="home__subtitle">Desenvolvedor Web FullStack</h3>
+      <p className='home__description'>Trazendo ideias de negócio a vida com um pouco de código e imaginação.</p>
 
-      <a href="#contact" className="button button--flex">
-        Fale comigo
+     { isSmallScreen  && <ScreenshotsSection/>}
+
+
+      <a href="#contact" className="button--home button button--flex">
+        Faça um orçamento
         <svg
           className='button__icon'
           width="29"

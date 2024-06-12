@@ -4,22 +4,21 @@
   right: 2.4rem;
   width: 5rem;
   height: 6rem;
-  background-color: var(--text-color);
+  background-color: var(--highlight-color);
   display: grid;
   place-content: center;
-
   border-radius: .5rem;
   cursor: pointer;
   z-index: var(--z-fixed);
 }
 
 .scrollToTop-btn:hover {
-  background-color: var(--text-hover);
+  background-color: var(--button-color);
 }
 
 .arrowUp-icon {
   font-size: 2.4rem;
-  color: var(--container-color)
+  color: var(--text-white)
 }
 
 /*============= Breakpoints ===================*/

@@ -126,7 +126,7 @@ img {
 
     /*============= Classes CSS Reutilizáveis ===================*/
     .section{
-      padding: 9.2rem 0 3.6rem;
+      padding: 9.2rem 0 6.6rem;
     }
 
     .section__title {
@@ -206,6 +206,8 @@ img {
     margin: 0 0 var(--header-height) 0;
   }
 
+  
+
   .section{
     padding: 3.2rem 0 6.4rem;
   }
@@ -216,6 +218,9 @@ img {
 }
 
 @media screen and (max-width: 576px){
+  .button{
+    width: 100%;
+  }
 }
 
 /*============= Para telas menores ===================*/

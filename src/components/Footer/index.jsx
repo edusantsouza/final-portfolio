@@ -9,22 +9,22 @@ const Footer = () => {
 
         <ul className="footer__navigation">
           <li className='footer__navigation-item'>
-            <a href="#about">Sobre</a>
-          </li>
-
-          <li className='footer__navigation-item'>
             <a href="#portfolio">Portfólio</a>
           </li>
 
           <li className='footer__navigation-item'>
-            <a href="#skills">Skills</a>
+            <a href="#contact">Contato</a>
+          </li>
+
+          <li className='footer__navigation-item'>
+            <a href="#services">Serviços</a>
           </li>
         </ul>
 
         <nav className="footer__social">
           <a href="https://wa.me/5521980467613" target='blank'><i className="uil uil-whatsapp"></i></a>
           <a href="https://github.com/edusantsouza" target='blank'><i className="uil uil-github-alt"></i></a>
-          <a href="https://www.linkedin.com/in/eduardo-sant-souza/" target='blank'><i className="uil uil-linkedin-alt"></i></a>
+          <a href="https://www.99freelas.com.br/user/edu-sant" target='blank'><div className="footer__99__icon"></div></a>
         </nav>
       </div>
 

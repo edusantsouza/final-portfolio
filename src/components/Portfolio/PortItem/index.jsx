@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const PortItem = ({ stackIcons, urlSite, urlImg, urlRepo }) => {
+const PortItem = ({ stackIcons, urlSite, urlImg, name, description }) => {
   return (
     <div className="portfolio__item">
 
@@ -9,34 +9,45 @@ const PortItem = ({ stackIcons, urlSite, urlImg, urlRepo }) => {
 
 
       <div className="portfolio__details">
-        <a href={urlSite}
-          rel='noreferrer'
-          target="_blank"
-          className="portfolio__see-more"
-        >
-          Ver site
-          <i className="uil uil-arrow-right"></i>
-        </a>
-        <a href={urlRepo}
-          rel='noreferrer'
-          target="_blank" className="portfolio__see-repository">
-          Repositório
-          <i className="uil uil-github-alt"></i>
-        </a>
-      </div>
 
-      <div className="portfolio__stack">
-        <span className="portifolio__tecnologies">Tecnologias:</span>
-        <div className="portfolio__stack-icons">
-          {stackIcons.map((item, index) => {
-            return (
-              <i key={index} className={item}></i>
-            )
-          })}
+        <div className="portfolio__description">
+          <h1 className="portfolio__item__name">{name}</h1>
+
+          <div className="portfolio__stack">
+            <span className="portifolio__tecnologies">Tecnologias:</span>
+            <ul className="portfolio__stack-icons">
+            {stackIcons.map((item, index) => {
+                return (
+                  <li key={index} className="stack__item">{item}</li>
+                )
+              })}
+          </ul>
         </div>
-      </div>
 
+          <p className="portfolio__item__description"><span>Descrição:</span>{description}</p>
+     </div>
+        
+        <div className="portfolio__info">
+          <a href={urlSite}
+            rel='noreferrer'
+            target="_blank"
+            className="portfolio__see-more"
+          >
+            Ver site
+            <i className="uil uil-arrow-right"></i>
+          </a>
+          
+          
+        </div>
+
+       
+    
+      </div>
+    
     </div>
+
+  
+
   )
 }
 

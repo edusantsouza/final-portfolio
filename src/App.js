@@ -15,12 +15,10 @@ const App = () => {
       <Header />
       <main className="main">
         <Home />
-        <About />
-        <Skills />
-        <Qualification />
         <Portfolio />
+        <Skills />
         <Contact />
-        <ScrollToTop/>
+        <ScrollToTop />
       </main>
       <Footer />
     </>

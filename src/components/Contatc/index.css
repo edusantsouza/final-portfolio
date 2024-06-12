@@ -219,11 +219,10 @@
 
 @media screen and (max-width: 576px) {
   .contact__form {
-    width: 70%;
+    width: 100%;
   }
 
   .form__icon {
-    width: 60px;
     height: 30px;
     margin-left: .5rem;
   }

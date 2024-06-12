@@ -1,26 +1,49 @@
 .portfolio__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 3rem;
-  row-gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 2rem;
 }
 
 .portfolio__item{
   padding: 2rem 1rem;
   background-color: var(--container-color);
   display: flex;
-  flex-direction: column;
-  max-width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   box-shadow: 0px 8px 16px 0px #00000026;
   border-radius: 10px;
-  justify-self: center;
+  gap: 2rem;
 }
 
 .portfolio__details{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
   margin-bottom: 1rem;
-  align-items: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.portfolio__description{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.6rem;
+}
+
+.portfolio__item__description{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.portfolio__item__description span {
+  font-weight: var(--font-medium);
 }
 
 .portfolio__see-repository,.portfolio__see-more{
@@ -30,11 +53,26 @@
   align-items: center;
   color: var(--text-color);
   transition: .3s;
+  padding: 1rem 1rem 1rem 0;
 }
 
 .portifolio__tecnologies{
-  font-size: var(--tiny-font-size);
+  font-size: var(--medium-font-size);
   color: var(--text-color);
+}
+
+.stack__item{
+  font-size: var(--smaller-font-size);
+  color: var(--text-muted);
+  background-color: purple;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.stack__item:hover {
+  background-color: rgb(182, 8, 182);
 }
 
 .portfolio__see-repository:hover, .portfolio__see-more:hover{
@@ -43,9 +81,15 @@
 
 .portfolio__stack {
   display: flex;
-  flex-direction: column;
-  gap: .5rem;
+  align-items: center;
+  gap: 1rem;
 }
+
+.portfolio__info{
+  display: flex;
+  gap: 1.4rem;
+}
+
 
 .portfolio__stack-icons{
   font-size: var(--h3-font-size);
@@ -55,9 +99,9 @@
 }
 
 .portfolio__item-img{
-  width: 250px;
-  height: 140px;
-  margin-bottom: 1rem;
+  aspect-ratio: 16/9;
+  max-width: 300px;
+  border-radius: 5px;
 }
 
 .bxl-javascript:before{

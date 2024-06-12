@@ -7,7 +7,7 @@ const Portfolio = () => {
   const projects = [
     {
       name: 'Vibbe - Agência de Social Media',
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quae cupiditate dignissimos assumenda vitae excepturi nisi! Quo, quis. Sequi sed dolorem explicabo, optio aspernatur debitis!",
+      description: "Criei o site institucional da Vibbe, uma agência de social media, utilizando React e Vite. O resultado é um site moderno e responsivo, com componentes reutilizáveis e carregamento rápido, perfeito para destacar os serviços de marketing digital da agência. A arquitetura SPA (Single Page Application) assegura uma navegação rápida e suave para os usuários",
       urlImg: 'vibbe-img.JPG',
       urlSite: 'https://vibbe-co.vercel.app/',
       urlRepo: 'https://github.com/edusantsouza/vibbe.co',
@@ -18,7 +18,7 @@ const Portfolio = () => {
     },
     {
       name: 'Menerfa Store - E-commerce',
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quae cupiditate dignissimos assumenda vitae excepturi nisi! Quo, quis. Sequi sed dolorem explicabo, optio aspernatur debitis!",
+      description: "Desenvolvi a Menerfa, um e-commerce de camisetas, utilizando WordPress, PHP e WooCommerce. O site é responsivo, garantindo uma experiência de compra fluida em dispositivos móveis. Além disso, implementei otimizações de desempenho para carregamentos rápidos e integração com gateways de pagamento para facilitar as transações.",
       urlImg: 'mnf4.JPG',
       urlSite: 'https://menerfa.com.br',
       urlRepo: 'https://github.com/edusantsouza/menerfa-project',
@@ -30,7 +30,7 @@ const Portfolio = () => {
     },
     {
       name: 'Touch Prime - Loja de Informática',
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quae cupiditate dignissimos assumenda vitae excepturi nisi! Quo, quis. Sequi sed dolorem explicabo, optio aspernatur debitis!",
+      description: "Desenvolvi o site da Touch Prime, uma loja de informática de bairro, como um tema personalizado no WordPress. O objetivo era aumentar a visibilidade local, e o site responsivo foi otimizado para SEO local. O desempenho foi uma prioridade, garantindo que os clientes encontrem rapidamente o que precisam, seja em desktops ou dispositivos móveis",
       urlImg: 'touch.png',
       urlSite: 'https://touch-prime.vercel.app/',
       stackIcons: [

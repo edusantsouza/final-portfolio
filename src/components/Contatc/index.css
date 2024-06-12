@@ -177,7 +177,7 @@
   }
 
   .contact__form {
-    width: 50%;
+    width: 75%;
   }
 
   .contact__container-title {
@@ -221,6 +221,11 @@
   .contact__form {
     width: 100%;
   }
+
+  .contact__way-item {
+    width: 100%;
+  }
+
 
   .form__icon {
     height: 30px;

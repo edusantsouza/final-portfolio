@@ -11,7 +11,7 @@ export const FormContact = () => {
     let primaryForm = document.querySelector('.primary-form')
     primaryForm.classList.add('opacity')
 
-    emailjs.sendForm('service_4u8lymi', 'template_6gathfe', form.current, 'bjhRFj6ZlkoDAoq6Y')
+    emailjs.sendForm('service_4u8lymi', 'template_6gathfe', form.current, 'VjBXEYwfsrDR9uPeB')
       .then((result) => {
         if (result.status === 200) {
           setMsgStatus(false)

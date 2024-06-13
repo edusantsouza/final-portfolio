@@ -1,6 +1,7 @@
 import React from 'react'
 import PortItem from './PortItem'
 import './index.css'
+import FadeUp from '../FadeUp'
 
 const Portfolio = () => {
 
@@ -83,22 +84,29 @@ const Portfolio = () => {
   ]
   return (
     <section className="portfolio section container" id="portfolio">
-      <h2 className="section__title">Portfólio</h2>
-      <span className="section__subtitle">Trabalhos mais recentes</span>
+      <FadeUp delay={0.1}>
+        <h2 className="section__title">Portfólio</h2>
+      </FadeUp>
 
-      <div className="portfolio__container">
-        {projects.map((item) => {
-          return <PortItem
-            key={item.name}
-            name={item.name}
-            description={item.description}
-            urlImg={item.urlImg}
-            urlSite={item.urlSite}
-            urlRepo={item.urlRepo}
-            stackIcons={item.stackIcons}
-          />
+      <FadeUp delay={0.2}>
+        <span className="section__subtitle">Trabalhos mais recentes</span>
+      </FadeUp>
+
+      <ul className="portfolio__container">
+        {projects.map((item, index) => {
+          return <FadeUp key={index} delay={index/10}>
+              <PortItem
+              key={item.name}
+              name={item.name}
+              description={item.description}
+              urlImg={item.urlImg}
+              urlSite={item.urlSite}
+              urlRepo={item.urlRepo}
+              stackIcons={item.stackIcons}
+            />
+          </FadeUp>
         })}
-      </div>
+      </ul>
     </section>
   )
 }

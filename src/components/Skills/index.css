@@ -1,9 +1,29 @@
 .skillbox__container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap:8rem;
+  gap:6rem;
+  align-items: flex-start;
+  padding-top: 4.2rem;
+}
+
+.service__item div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 2rem 3rem;
+  background-color: #20202f;
+  border-radius: 10px;
+  height: 40rem;
+}
+
+.service__item h1 {
+  font-size: 2rem;
+  width: 200px;
+}
+
+.service__item p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .skillbox {
@@ -59,6 +79,15 @@
 /*============= Breakpoints ===================*/
 
 /*============= Para tela média ===================*/
+@media screen and (max-width: 960px){
+  .skillbox__container{
+    flex-direction: column;
+  }
+
+  .service__item div {
+    height: auto;
+  }
+}
 @media screen and (max-width: 576px){
   .skillbox__container {
     padding-inline: 2rem ;

@@ -61,6 +61,8 @@ img {
   --black: #1e1e1e;
   --container-color:#F4F6FF ;
   --text-white: #fff;
+ --secondary-color:#1764c9;
+ --secondary-hover:#1e7cf7;
 
   --body-color: #090810;
   --text-muted: #CBCBCB;
@@ -180,6 +182,30 @@ img {
     display: inline-flex;
     align-items: center;
   }
+
+/*============= Animations ===================*/
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 /*============= Breakpoints ===================*/

@@ -72,7 +72,7 @@
 .stack__item{
   font-size: var(--smaller-font-size);
   color: var(--text-muted);
-  background-color: purple;
+  background-color: var(--secondary-color);
   padding: .5rem 1rem;
   border-radius: 20px;
   cursor: pointer;
@@ -80,7 +80,7 @@
 }
 
 .stack__item:hover {
-  background-color: rgb(182, 8, 182);
+  background-color: var(--secondary-hover);
 }
 
 .portfolio__see-repository:hover, .portfolio__see-more:hover{

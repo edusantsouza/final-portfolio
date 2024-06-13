@@ -3,7 +3,7 @@ import React from 'react'
 
 const PortItem = ({ stackIcons, urlSite, urlImg, name, description }) => {
   return (
-    <div className="portfolio__item">
+    <li className="portfolio__item">
 
       <img src={require(`../../../assets/${urlImg}`)} className="portfolio__item-img" alt="Imagem do Projeto" />
 
@@ -44,7 +44,7 @@ const PortItem = ({ stackIcons, urlSite, urlImg, name, description }) => {
     
       </div>
     
-    </div>
+    </li>
 
   
 

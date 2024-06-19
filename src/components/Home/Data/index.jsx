@@ -22,7 +22,7 @@ const Data = () => {
     <div className="home__data">
       <h1 className="home__title">Eduardo Sant</h1>
 
-      <h3 className="home__subtitle">Desenvolvedor Web FullStack</h3>
+      <h3 className="home__subtitle">Desenvolvedor Web Full Stack</h3>
       <p className='home__description'>Trazendo ideias de negócio a vida com um pouco de código e imaginação.</p>
 
      { isSmallScreen  && <ScreenshotsSection/>}
